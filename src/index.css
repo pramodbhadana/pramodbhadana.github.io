@@ -1,3 +1,104 @@
+:root {
+  /* fonts */
+  --text-lg-semibold: Inter;
+
+  /* font sizes */
+  --text-md-semibold-size: 16px;
+  --text-lg-semibold-size: 18px;
+  --text-xl-regular-size: 20px;
+  --display-md-semibold-size: 36px;
+  --font-size-3xl: 22px;
+  --font-size-10xl: 29px;
+  --display-lg-semibold-size: 48px;
+  --font-size-19xl: 38px;
+  --display-sm-semibold-size: 30px;
+  --font-size-5xl: 24px;
+  --text-sm-regular-size: 14px;
+  --display-xl-semibold-size: 60px;
+
+  /* Colors */
+  --base-white: #fff;
+  --gray-600: #475467;
+  --gray-700: #344154;
+  --gray-900: #101828;
+  --color-gray-100: #2e001f;
+  --color-gray-200: rgba(16, 24, 40, 0.9);
+  --color-deeppink: #ff26be;
+  --gray-50: #f9fafb;
+  --color-whitesmoke-100: #f2f4f7;
+  --gray-200: #eaecf0;
+  --gray-300: #d0d5dd;
+  --brand-25: #F6FEFC;
+  --brand-50: #F0FDF9;
+  --brand-100: #CCFBEF;
+  --brand-200: #99F6E0;
+  --brand-300: #5FE9D0;
+  --brand-400: #2ED3B7;
+  --brand-500: #15B79E;
+  --brand-600: #0E9384;
+  --brand-700: #107569;
+  --brand-800: #125D56;
+  --brand-900: #134E48;
+  --brand-950: #0A2926;
+  --base-black: #000;
+  --color-slategray: #667085;
+
+  /* Gaps */
+  --gap-13xl: 32px;
+  --gap-base: 16px;
+  --gap-xl: 20px;
+  --gap-0: 0px;
+  --gap-29xl: 48px;
+  --gap-xs: 12px;
+  --gap-5xs: 8px;
+  --gap-5xl: 24px;
+  --gap-9xs: 4px;
+  --gap-77xl: 96px;
+  --gap-45xl: 64px;
+  --gap-11xs: 2px;
+  --gap-7xs: 6px;
+
+  /* Paddings */
+  --padding-77xl: 96px;
+  --padding-xl: 20px;
+  --padding-173xl: 192px;
+  --padding-106xl: 125px;
+  --padding-7xs: 6px;
+  --padding-2xl: 21px;
+  --padding-mini: 15px;
+  --padding-45xl: 64px;
+  --padding-13xl: 32px;
+  --padding-117xl: 136px;
+  --padding-69xl: 88px;
+  --padding-38xl: 57px;
+  --padding-xs: 12px;
+  --padding-lg: 18px;
+  --padding-11xs: 2px;
+  --padding-21xl: 40px;
+  --padding-43xl: 62px;
+  --padding-7xl: 26px;
+  --padding-mid: 17px;
+  --padding-12xs: 1px;
+  --padding-8xl: 27px;
+  --padding-23xl: 42px;
+  --padding-9xs: 4px;
+  --padding-smi: 13px;
+  --padding-3xs: 10px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-base: 16px;
+  --br-xs: 12px;
+  --br-5xl: 24px;
+  --br-xl: 20px;
+  --br-181xl: 200px;
+
+  /* Effects */
+  --shadows-shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --shadows-shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +111,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
 }
