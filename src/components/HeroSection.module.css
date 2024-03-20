@@ -1,0 +1,206 @@
+  * {
+    box-sizing: border-box;
+  }
+  .section,
+  .container {
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 var(--padding-13xl);
+    max-width: 1280px;
+  }
+  .heroTextAndCTA {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xl) var(--padding-13xl) var(--padding-xl) 0;
+    box-sizing: border-box;
+    gap: var(--gap-29xl);
+  }
+  .heroImageWrapper {
+    min-width: 420px;
+    flex: 1;
+    padding: var(--gap-29xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageIcon {
+    width: 100%;
+  }
+  .heading {
+    margin: 0;
+    align-self: stretch;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    line-height: 72px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .supportingText {
+    width: 100%;
+    font-size: var(--text-xl-regular-size);
+    line-height: 30px;
+    color: var(--gray-600);
+    display: inline-block;
+    max-width: 480px;
+  }
+  .headingAndSupportingText {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    font-size: var(--display-xl-semibold-size);
+  }
+  .label {
+    width: 36px;
+    line-height: 20px;
+    font-weight: 500;
+    display: none;
+  }
+  .queryText {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--text-md-regular);
+    font-size: var(--text-md-regular-size);
+    color: var(--gray-500);
+    min-width: 184px;
+  }
+  .input,
+  .inputWithLabel {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .input {
+    border-radius: var(--br-5xs);
+    background-color: var(--base-white);
+    box-shadow: var(--shadows-shadow-xs);
+    border: 1px solid var(--gray-300);
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-xs) var(--padding-smi);
+    gap: var(--gap-5xs);
+  }
+  .inputWithLabel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-7xs);
+  }
+  .hintText {
+    align-self: stretch;
+    line-height: 20px;
+    color: var(--gray-600);
+  }
+  .inputField {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs);
+    min-width: 218px;
+    max-width: 100%;
+  }
+  .buttonText {
+    font-size: var(--text-md-regular-size);
+    line-height: 24px;
+    font-weight: 600;
+    font-family: var(--text-md-regular);
+    color: var(--base-white);
+    text-align: left;
+    white-space: nowrap;
+  }
+  .textPadding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--padding-11xs);
+  }
+  .button,
+  .emailCapture {
+    display: flex;
+    flex-direction: row;
+  }
+  .button {
+    cursor: pointer;
+    border: 1px solid var(--brand-600);
+    padding: var(--padding-xs) var(--padding-mid);
+    background-color: var(--brand-600);
+    border-radius: var(--br-5xs);
+    box-shadow: var(--shadows-shadow-xs);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-7xs);
+  }
+  .emailCapture {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    max-width: 480px;
+    color: var(--gray-700);
+  }
+
+  @media screen and (max-width: 800px) {
+    /* .container {
+      gap: 20px;
+    } */
+    .heading {
+      font-size: var(--display-lg-semibold-size);
+      line-height: 58px;
+    }
+    .emailCapture,
+    .supportingText {
+      max-width: 100%;
+    }
+    .emailCapture {
+      flex-wrap: wrap;
+    }
+    .heroTextAndCTA {
+      gap: 24px 48px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    /* .container {
+      gap: 8px;
+    } */
+    .heroImageWrapper {
+      min-width: 280px;
+      min-height: auto;
+      padding: var(--gap-5xl);
+    }
+    .button {
+      width: 100%;
+    }
+    .heading {
+      font-size: var(--display-md-semibold-size);
+      line-height: 43px;
+    }
+    .supportingText {
+      font-size: var(--text-sm-regular-size);
+      line-height: 24px;
+    }
+  }
+  
